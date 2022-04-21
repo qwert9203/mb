@@ -1,3 +1,5 @@
+# GE1354 L01-8 21/4/2022 mini project
+# names and sid not listed for security reasons
 from microbit import *
 import utime as time
 from ssd1306 import initialize, clear_oled, draw_screen, screen
@@ -65,7 +67,6 @@ def set_chr(x, y, text):
         ind = x * 10 + y * 128 + c * 2 + 1
         screen[ind], screen[ind + 1] = col, col
 
-# this needs to be fixed lol
 # gets information about the bpm and whether it is an onbeat or not
 def get_info(cur, l, bpm_calc_num=10):
     if l:
